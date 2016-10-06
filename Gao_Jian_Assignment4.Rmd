@@ -13,7 +13,7 @@ seq(1:20)
 ```{r}
 n<-20
 c<-(n:1)
-n
+c
 # Create a vector c from 20 to 1
 ```
 #c).
@@ -24,6 +24,7 @@ c(1:20,19:1)
 #d).
 ```{r}
 tmp<-c(4,6,3)
+tmp
 # Create a vector tmp as (4,6,3)
 ```
 #e).
