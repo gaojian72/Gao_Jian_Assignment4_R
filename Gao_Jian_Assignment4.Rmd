@@ -93,8 +93,11 @@ paste('fn',1:30,sep="")
 
 ##Question 6
 set.seed(50)
+
 xVec<-sample(0:999,250,replace=T)
+
 yVec<-sample(0:999,250,replace=T)
+
 #a).
 ```{r}
 yVec[c(2:250)]-xVec[c(1:249)]
