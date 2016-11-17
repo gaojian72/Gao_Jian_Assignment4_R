@@ -1,7 +1,7 @@
----
-title: "Assigenment 5"
-output: html_document
----
+# ---
+# title: "Assigenment 5"
+# output: html_document
+# ---
 
 library('ggplot2')
 library('dplyr')
@@ -11,7 +11,7 @@ data<-data.frame(diamonds)
 ##Question 1
 ```{r}
 str(data)
-attributes(data)
+# attributes(data)
 ncol(data)
 # print the console all methods and attributes
 # associates with a dataframe
@@ -48,6 +48,14 @@ colMeans(data1)
 
 ##Question 6```{r}
 data2<-data[,sapply(data,is.factor)]
+
+##Prof G - Not quite. Your code below results in 
+##Prof G - the frequency of
+##Prof G - each unique combination of the three
+##Prof G - factor variables combined. Here's example
+##Prof G - code to generate a frequency table.
+table(data2[1]) ##Prof G's example
+
 rename(count(data2,cut,color,clarity),Freq=n)
 # create a frequency table for every factor column
 # label the output with the name of the column
@@ -55,7 +63,18 @@ rename(count(data2,cut,color,clarity),Freq=n)
 
 ##Question 7 
 ```{r}
+##Prof G - What data were you trying to use?
+##Prof G - Here's an example with mtcars
+data("mtcars")
+mtcars$nas <- c(1,2,NA,4)*8
+data <- mtcars
+
+##Prof G - This works correctly
 sapply(data,function(x) sum(is.na(x)))
+
+##Prof G - This does not work because the code
+##Prof G - specifies a specific column in a dataframe
+##Prof G - that is not created in this script file.
 sum(data$catch.rate %in% NA)/nrow(data)
 # determine the number of rows containing NA in each column
 # determine the percentage of rows containing NA in any column
@@ -87,6 +106,7 @@ pearson.coe <- function(x){
 }
 
 #Example
+data <- diamonds
 pearson.coe(data)
 ```
 

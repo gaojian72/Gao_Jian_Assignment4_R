@@ -1,5 +1,7 @@
 ###########Assigenment 4###############
 
+##Prof G - You didn't explain any of your solutions.
+
 ##Question1
 #a).
 seq(1:20)

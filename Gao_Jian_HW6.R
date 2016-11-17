@@ -1,13 +1,17 @@
----
-title: "Assigenment 6"
-output: html_document
----
+##title: "Assigenment 6"
+##output: html_document
+##---
 ## Jian Gao
 ## Group C
-
+##Prof G - Like you HW5 file, I could not run this
+##Prof G - script because you kept the mark-up header
+##Prof G - and the ```{r} mark-ups in the file. These
+##Prof G - should only be included in the .rmd file.
 library('ggplot2')
 library('gridExtra')
 library('grid')
+
+##Prof G - Why is this package required?
 library('pracma')
 data<-data.frame(diamonds)
 ## the require packages and dataframe we use 
@@ -70,6 +74,10 @@ print(hist1,vp=viewport(0.215, 0.2, 0.35, 0.25))
 
 ## Question 6
 ```{r}
+
+##Prof G - Good initiative. Rather than flipping the
+##Prof G - coordinates of hist1, you should have rotated
+##Prof G - the subplot 90 degrees counter-clockwise
 empty <- ggplot()
 empty <- empty + geom_point(aes(1,1), colour="white")
 empty <- empty + theme(axis.ticks=element_blank(), 
