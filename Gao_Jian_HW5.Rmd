@@ -4,8 +4,11 @@ output: html_document
 ---
 
 library('ggplot2')
+
 library('dplyr')
+
 data<-data.frame(diamonds)
+
 # the library we need to use and the data set diamonds
 
 ##Question 1
