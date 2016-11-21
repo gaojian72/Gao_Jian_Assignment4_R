@@ -46,7 +46,8 @@ colMeans(data1)
 # label the output with the name of the column
 ```
 
-##Question 6```{r}
+##Question 6
+```{r}
 data2<-data[,sapply(data,is.factor)]
 rename(count(data2,cut,color,clarity),Freq=n)
 # create a frequency table for every factor column
@@ -61,7 +62,7 @@ sum(data$catch.rate %in% NA)/nrow(data)
 # determine the percentage of rows containing NA in any column
 ```
 
-##Quewtion 8
+##Question 8
 ```{r}
 pearson.coe <- function(x){
   # This function can accept any dataframe as a parameter
