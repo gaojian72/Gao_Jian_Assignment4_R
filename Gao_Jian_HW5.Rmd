@@ -51,6 +51,7 @@ colMeans(data1)
 
 ##Question 6
 ```{r}
+##Prof G - Looks like your create a frequency table for every combination of the columns instead of every column.
 data2<-data[,sapply(data,is.factor)]
 rename(count(data2,cut,color,clarity),Freq=n)
 # create a frequency table for every factor column
